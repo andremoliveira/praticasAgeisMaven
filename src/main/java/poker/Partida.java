@@ -4,8 +4,9 @@ import java.util.List;
 
 public class Partida {
 
-	public boolean pair(List<String> hand) {
+	public int pairCounter(List<String> hand) {
 		
+		int counter = 0;
 		for(int i = 0; i < hand.size(); i++) {
 			String card = hand.get(i);
 			String number = card.substring(0, card.length() - 1);
@@ -15,11 +16,12 @@ public class Partida {
 				String numberCard2 = card2.substring(0, card2.length() - 1);
 				
 				if(number.equals(numberCard2)){
-					return true;
+					counter++;
 				}
 			}
 		}
 		
-		return false;
+		return counter;
 	}
+	
 }

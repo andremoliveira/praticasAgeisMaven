@@ -33,7 +33,20 @@ public class PartidaTest {
 		hand.add("KD");
 		
 		Partida partida = new Partida();
-		assertTrue(partida.pair(hand));
+		assertEquals(1, partida.pairCounter(hand));
 	}
-
+	
+	@Test
+	public void isTwoPair() {
+		
+		hand.add("5H");
+		hand.add("5C");
+		hand.add("6S");
+		hand.add("6H");
+		hand.add("KD");
+		
+		Partida partida = new Partida();
+		assertEquals(2, partida.pairCounter(hand));
+	}
+	
 }
