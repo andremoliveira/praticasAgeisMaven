@@ -17,9 +17,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     goals: 'package'
-    
-- task: Maven@2
-  displayName: 'Maven CalculadorBissexto'
-  inputs:
-	mavenPomFile: '$(Parameters.mavenPOMFile)'
-	codeCoverageToolOption: JaCoCo    
