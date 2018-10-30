@@ -22,4 +22,13 @@
   	<maven.compiler.source>1.6</maven.compiler.source>
   	<maven.compiler.target>1.6</maven.compiler.target>
   </properties>
+  <build>
+    <plugins>
+        <plugin>
+		 	 <groupId>org.jacoco</groupId>
+		 	 <artifactId>jacoco-maven-plugin</artifactId>
+		  	 <version>0.8.3-SNAPSHOT</version>
+		</plugin>
+    </plugins>
+  </build>
 </project>
